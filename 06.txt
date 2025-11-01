@@ -1,0 +1,18 @@
+1) Int
+2) Long Long
+3) Int
+4) Int
+5) Error
+6) Ref
+7) CRef
+8) CRef
+9) CRef
+10) Ref
+11) CRef
+12) CRef
+13) C-string
+14) std::string
+15) C-string
+16) std::string
+17) std::string
+18) C-string
