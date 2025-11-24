@@ -1,0 +1,4 @@
+1) Default Constructible, Copy Constructible, Copy Assignable
+2) Copy Constructible, Copy Assignable
+3) Default Constructible, Copy Assignable
+4) Default Constructible, Copy Constructible, Copy Assignable

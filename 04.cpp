@@ -1,33 +1,36 @@
 #include <iostream>
-
-class Cat {
-    int& miceCaught;
-public:
-    Cat(int& mice) : miceCaught(mice) {}
-    void catchMice(int n) {
-        miceCaught += n;
-    }
-};
+#include <string>
+#include <vector>
 
 int main() {
-    int miceCaughtA = 0;
-    int miceCaughtB = 0;
+    int* pInt = new int(123);
+    std::cout << *pInt << std::endl;
+    delete pInt;
 
-    Cat alice(miceCaughtA), alex(miceCaughtA), anna(miceCaughtA);
-    Cat bob(miceCaughtB), bella(miceCaughtB);
+    std::string* pString = new std::string("Cats and Dogs");
+    std::cout << *pString << std::endl;
+    delete pString;
 
-    alice.catchMice(2);
-    alex.catchMice(1);
-    bella.catchMice(4);
-    bob.catchMice(2);
-    anna.catchMice(1);
-    bella.catchMice(1);
-    alex.catchMice(4);
-    bella.catchMice(5);
-    alice.catchMice(2);
+    int* pArray = new int[5]{10, 20, 30, 40, 50};
+    for (int i = 0; i < 5; ++i) {
+        std::cout << pArray[i] << " ";
+    }
+    std::cout << std::endl;
+    delete[] pArray;
 
-    std::cout << miceCaughtA << std::endl;
-    std::cout << miceCaughtB << std::endl;
+    std::vector<int>* pVector = new std::vector<int>{10, 20, 30, 40, 50};
+    for (int value : *pVector) {
+        std::cout << value << " ";
+    }
+    std::cout << std::endl;
+    delete pVector;
+
+    std::string* pStrArray = new std::string[3]{"Cat", "Dog", "Mouse"};
+    for (int i = 0; i < 3; ++i) {
+        std::cout << pStrArray[i] << " ";
+    }
+    std::cout << std::endl;
+    delete[] pStrArray;
 
     return 0;
 }
