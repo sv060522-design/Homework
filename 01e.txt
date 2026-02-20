@@ -1,0 +1,7 @@
+ОС: Windows
+Компилятор: g++ (MinGW-w64)
+Оболочка: cmd
+
+Команды:
+g++ 01e_test.cpp -ldl -o test_dl.exe
+test_dl.exe

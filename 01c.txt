@@ -1,0 +1,7 @@
+ОС: Windows
+Компилятор: g++ (MinGW-w64)
+Оболочка: cmd
+
+Команды:
+g++ -c -fPIC algebra.cpp geometry.cpp statistics.cpp
+g++ -shared -o libmiptlib.dll algebra.o geometry.o statistics.o -Wl,--out-implib,libmiptlib.dll.a

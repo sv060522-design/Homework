@@ -1,0 +1,7 @@
+ОС: Windows
+Компилятор: g++ (MinGW-w64)
+Оболочка: cmd
+
+Команды:
+g++ test.cpp -L. -lmiptlib -o test_dynamic.exe
+test_dynamic.exe

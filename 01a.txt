@@ -1,0 +1,7 @@
+ОС: Windows
+Компилятор: g++ (MinGW-w64)
+Оболочка: cmd
+
+Команды:
+g++ -c algebra.cpp geometry.cpp statistics.cpp
+ar rcs libmiptlib.a algebra.o geometry.o statistics.o
