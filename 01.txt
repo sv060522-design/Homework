@@ -1,0 +1,21 @@
+1. 100 — rvalue
+2. a — lvalue
+3. a + 1 — rvalue
+4. l — lvalue
+5. r — lvalue
+6. l + r — rvalue
+7. std::abs(a) — rvalue
+8. funca() — rvalue
+9. funcb(a) — lvalue
+10. funcb(l) — lvalue
+11. funcb(r) — lvalue
+12. funcc(a) — rvalue
+13. funcc(l) — rvalue
+14. funcc(r) — rvalue
+15. static_cast<int>(a) — rvalue
+16. static_cast<int&>(a) — lvalue
+17. static_cast<int&&>(a) — rvalue
+18. static_cast<int&&>(r) — rvalue
+19. rand() > 5 ? a : 10 — rvalue
+20. rand() > 5 ? a : r — lvalue
+21. +a — rvalue
